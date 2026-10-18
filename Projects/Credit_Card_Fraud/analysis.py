@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, average_precision_score
 
-df = pd.read_csv("Projects\Credit_Card_Fraud\data\cleaned_fraudTest.csv")
+df = pd.read_csv("data/cleaned_fraudTest.csv")
 
 #print(df.nunique())
 #print(df.info())    #showed an issue of the collumns for date and time and cc_num

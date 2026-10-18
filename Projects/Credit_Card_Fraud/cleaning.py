@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 #Loading Data
-data = pd.read_csv("Projects/Credit_Card_Fraud/data/fraudTest.csv")
+data = pd.read_csv("data/fraudTest.csv")
 
 def haversine_np(lat1, lon1, lat2, lon2):
     lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])
@@ -50,4 +50,4 @@ data["hour"] = data['trans_Date_&_Time'].dt.hour
 #print(data.isnull().sum())
 
 # Save the cleaned DataFrame to a new CSV file
-data.to_csv("Projects/Credit_Card_Fraud/data/cleaned_fraudTest.csv", index=False)
+data.to_csv("data/cleaned_fraudTest.csv", index=False)
